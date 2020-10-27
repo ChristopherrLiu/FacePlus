@@ -3,7 +3,6 @@ __pycache__/
 /lib/FaceRecognizer/data/face/test.txt
 /lib/FaceRecognizer/data/face/train.txt
 /lib/FaceRecognizer/data/face/readme.json
-!/lib/FaceDetector/weights/*
 /lib/FaceRecognizer/data/face/resource/*
 /lib/FaceRecognizer/data/face/transformed/*
 /lib/FaceRecognizer/weights/*
