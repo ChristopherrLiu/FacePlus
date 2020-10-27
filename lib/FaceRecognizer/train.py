@@ -81,7 +81,7 @@ class FaceTrainer(object) :
         self.logger.info('Evaluating Network.....')
         self.logger.info('Val set: Auc: {:.2%}, Best Accuracy: {:.2%}@threshold={:.2f}, Time consumed:{:.2f}s'.format(
             auc,
-            bacc * 100.,
+            bacc,
             bthr,
             finish - start
         ))
@@ -96,8 +96,7 @@ class FaceTrainer(object) :
 
         if self.conf.resume:
             try:
-                #ckpt_path = get_newest_file(checkdir(osp.join(self.base_path, self.conf.ckpt_dirname)))
-                ckpt_path = "/home/mist/tmp/FacePlus/lib/FaceRecognizer/checkpoints/epoch_27_acc_31.10%.ckpt"
+                ckpt_path = get_newest_file(checkdir(osp.join(self.base_path, self.conf.ckpt_dirname)))
                 start_epoch, pre_infos = load_train_ckpt([self.net, self.n_optimizer], ckpt_path, self.device)
                 train_infos['loss'] += pre_infos
                 self.logger.info("resume from {}".format(start_epoch))
