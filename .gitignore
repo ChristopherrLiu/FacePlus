@@ -1,5 +1,5 @@
 /.idea/
-*/__pycache__
+__pycache__/
 /lib/FaceRecognizer/data/face/test.txt
 /lib/FaceRecognizer/data/face/train.txt
 /lib/FaceRecognizer/data/face/readme.json
@@ -13,10 +13,6 @@
 /lib/FacialExpressionRecognizer/data/fer2013/resource/*
 /lib/FacialExpressionRecognizer/data/fer2013/transformed/*
 /log/*
-/__pycache__/
-/lib/FaceDetector/__pycache__/
-/lib/FaceRecognizer/__pycacge__/
-/lib/FacialExpressionRecognizer/__pycache__/
 /lib/FaceRecognizer/facebank/images/*
 /lib/FaceRecognizer/facebank/liu/
 /lib/FaceRecognizer/facebank/zhaoliying/
