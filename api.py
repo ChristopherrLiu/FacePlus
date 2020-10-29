@@ -1,6 +1,6 @@
 # -*-coding:utf-8-*-
 """
-some application Programming Interfaces base on ZeroRpc
+some application Programming Interfaces based on thrift
 """
 import os
 import os.path as osp
