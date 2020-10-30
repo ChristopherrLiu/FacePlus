@@ -63,6 +63,7 @@ if __name__ == "__main__" :
     person_list = os.listdir(facebank_path)
     imgs, names = list(), list()
     for person in person_list :
+        if person == '.gitkeep' or person == 'README.md' : continue
         person_dirname = osp.join(facebank_path, person)
         img_list = os.listdir(person_dirname)
 
